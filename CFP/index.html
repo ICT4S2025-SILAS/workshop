@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Sustainable PETs">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>CfP</title>
+</head>
+
+<body>
+
+    <div class="banner" data-include="banner.html"></div>
+
+
+    <h2>Call for papers</h2>
+    <p>The call for papers is closed.</p>
+    <!-- <p>
+        We invite researchers, practitioners, and policymakers to participate in our half-day workshop exploring the intersection of Privacy-Enhancing Techniques (PETs) with sustainability challenges.
+        As the volume of Artificial Intelligence (AI) publications skyrockets, it's imperative to address the ecological impact.
+        Early studies warned of environmental repercussions, emphasizing the need for a nuanced analysis of digital processes and their ecological footprint.
+        Our workshop delves into two critical aspects of PETs, namely: energy consumption and data utility.
+        We welcome researchers to submit their papers on the following topics:
+        <ul class="bullets">
+            <li>Synthetic data;</li>
+            <li>k-anonymity, l-diversity and t-closeness;</li>
+            <li>Encryption;</li>
+            <li>Secure multi-party computation</li>
+            <li>Differential privacy;</li>
+            <li>Privacy-preserving machine learning;</li>
+            <li>Other privacy-enhancing techniques or practises.</li>
+        </ul>
+
+        Papers could be submitted via <a href="https://easychair.org/conferences/?conf=suspets24">EasyChair</a> and should be between up to pages long including references.
+        Papers should be in <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE format</a>.
+        The deadline for submissions is <del>April 7</del>April 21, 2024.
+
+        We strive to have between 4-6 papers to be presented in our workshop, after which we discuss the outcomes in a group of peers.
+        More info on the <a href="program">programme</a> can be found on the website.
+    </p> -->
+
+    <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch and include the HTML
+            var elements = document.querySelectorAll('[data-include]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('data-include');
+                fetch(file)
+                    .then(response => response.text())
+                    .then(html => {
+                        element.innerHTML = html;
+                    });
+            });
+        });
+    </script>
+
+</body>
+</html>

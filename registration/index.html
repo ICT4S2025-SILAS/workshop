@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Sustainable PETs">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <div class="banner" data-include="banner.html"></div>
+
+    <br>
+
+    <p>
+    Registration to our workshop goes through the <a href="https://conf.researchr.org/attending/ict4s-2024/registration">ICT4S registration form</a>.
+    </p>
+
+    <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch and include the HTML
+            var elements = document.querySelectorAll('[data-include]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('data-include');
+                fetch(file)
+                    .then(response => response.text())
+                    .then(html => {
+                        element.innerHTML = html;
+                    });
+            });
+        });
+    </script>
+
+</body>
+</html>
+

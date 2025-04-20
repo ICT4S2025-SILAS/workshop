@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <base href="..">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+        <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+        <meta name="description" content="Sustainable PETs">
+        <meta name="resource-type" content="document">
+        <meta name="distribution" content="global">
+        <meta name="KeyWords" content="Conference">
+        <title>Organisers</title>
+
+    </head>
+
+<body>
+
+    <div class="banner" data-include="banner.html"></div>
+
+    <div class="row">
+        <div class="column">
+            <div class="profile-container">
+                <div class="leftside">
+                    <h3>Ana Oprescu</h3>
+                    <p>
+                        Assistant Professor Universiteit van Amsterdam, co-organised SATToSE'20 Amsterdam, the first time it was organized in online format due to Corona.
+                        <img class="profile" src="assets/Ana.png" alt="Photo of Ana Oprescu" id="Ana">
+                    </p>
+                </div>
+                <div class="rightside">
+                    <h3>Pepijn de Reus</h3>
+                    <p>
+                        Master student Artificial Intelligence (University of Amsterdam). Author of the paper <a href="https://ieeexplore.ieee.org/document/10292174">"Energy Cost and Machine Learning Accuracy Impact of k-Anonymisation and Synthetic Data Techniques" at ICT4S 2023.</a>
+                        <img class="profile" src="assets/Pepijn.png" alt="Photo of Pepijn de Reus" id="Pepijn">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="profile-container">
+                <div class="leftside">
+                    <h3>Ivano Malavolta</h3>
+                    <p>
+                        Associate Professor at the Vrije Universiteit Amsterdam. His research interests include Software engineering, Software architecture, Green Software, and Robotics Software. He is program committee member and reviewer of international conferences and journals in his fields of interest. Ivano Malavolta received a PhD in computer science from the University of L'Aquila, Italy. He is a member of ACM and IEEE. Ivano Malavolta's organizing experience: co-organizer of all the editions of the RoSE workshop, co-organizer of the COMMitMDE'16, COMMitMDE'17, and COMMitMDE'18 workshops, co-organizer of the GREENS'18 workshop, co-organizer of the ModComp'16 and ModComp'17 workshops, workshop chair for ICSA'17, social media chair of ICSE'18, workshop chair for ICT4S'16, program chair of ECSA'20 and MOBILESoft'19, visions track chair of MOBILESoft'18, publicity chair of MOBILESoft'17, publicity chair of SERENE'13.
+                        <img class="profile" src="assets/ivano.jpg" alt="Photo of Ivano" id="Ivano">
+                    </p>
+                </div>
+                <div class="rightside">
+                    <h3>Fernando Castor</h3>
+                    <p>
+                        Associate Professor at the University of Twente. Fernando is particularly concerned about sustainability within the context of software development and his broad research goal is to help developers build more efficient software systems more efficiently. More specifically, he conducts research in the areas of Software Maintenance, Software Energy Efficiency, and Code Understandability. He's been involved with ICT4S since 2022, as a workshop co-chair (2022) and PC member (2022, 2023).
+                        Website: <a href="https://fernandocastor.github.io/">https://fernandocastor.github.io/</a> 
+                        <img class="profile" src="assets/fernando.jpg" alt="Photo of Fernando" id="Fernando">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="profile-container">
+                <div class="leftside">
+                    <h3>João Paulo Fernandes</h3>
+                    <p>
+                        Visiting Associate Professor, New York University Abu Dhabi. <a href="https://nyuad.nyu.edu/en/academics/divisions/science/faculty/joao-paulo-fernades.html">João Paulo Fernandes</a> is a computer scientist passionate about addressing sustainability challenges within software development and usage and creating a greener, more eco-friendly future.
+                        His research interests focus on optimizing the energy efficiency of software systems by providing information and tools for developers to build energy-efficient systems and for end users to adopt energy-efficient usage patterns.
+                        His scientific achievements have been described in over 75 publications in high-quality international conferences and journals such as IEEE TSE, EMSE, JSS, ICSME, SANER, EASE, and SLE, and include award-winning publications, e.g., the "Data Showcase Special Mention Award" at MSR'19. He has served as general co-chair in the Organizing Committee of ICT4S'22 and on over 50 international conferences and journals program committees. He was awarded the Outstanding Reviewer Award at SBES'19.
+                        <img class="profile" src="assets/joao.jpeg" alt="Photo of Joao" id="Joao">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch and include the HTML
+            var elements = document.querySelectorAll('[data-include]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('data-include');
+                fetch(file)
+                    .then(response => response.text())
+                    .then(html => {
+                        element.innerHTML = html;
+                    });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
