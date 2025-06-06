@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Sustainable PETs">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Program</title>
+</head>
+
+<body>
+
+    <div class="banner" data-include="banner.html"></div>
+
+    <embed
+        src="assets/SILAS_2025_paper.pdf"
+        type="application/pdf"
+        frameBorder="0"
+        scrolling="auto"
+        height="100%"
+        width="100%"
+    ></embed>
+
+    <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch and include the HTML
+            var elements = document.querySelectorAll('[data-include]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('data-include');
+                fetch(file)
+                    .then(response => response.text())
+                    .then(html => {
+                        element.innerHTML = html;
+                    });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
