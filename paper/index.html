@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<embed
-    src="assets/SILAS_2025_paper.pdf"
-    type="application/pdf"
-    frameBorder="0"
-    scrolling="auto"
-    height="100%"
-    width="100%"
-></embed>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Fetch and include the HTML
-            var elements = document.querySelectorAll('[data-include]');
-            elements.forEach(function(element) {
-                var file = element.getAttribute('data-include');
-                fetch(file)
-                    .then(response => response.text())
-                    .then(html => {
-                        element.innerHTML = html;
-                    });
-            });
-        });
-    </script>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Viewer</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        embed {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <embed
+        src="assets/SILAS_2025_paper.pdf"
+        type="application/pdf"
+    />
 </body>
 </html>
-
